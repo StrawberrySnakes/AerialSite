@@ -4,52 +4,19 @@
     padding: 0;
 }
 
-/* fonts */
-.pt-sans-regular {
-    font-family: "PT Sans", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .pt-sans-bold {
-    font-family: "PT Sans", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .pt-sans-regular-italic {
-    font-family: "PT Sans", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  .pt-sans-bold-italic {
-    font-family: "PT Sans", sans-serif;
-    font-weight: 700;
-    font-style: italic;
-  }
-  
-
-
 /* font sze and style declaration */
 p, a {
     font-size: 2.8vh;
     font-family: "Handlee","Klee One", sans-serif;
     font-family: "Klee One", sans-serif;
-
-
     line-height: 1.6;
 }
 
 h2, h1 {
-
     font-size: 5vh;
     font-family: "Klee One", sans-serif;
     color: #2a2961;
     font-family: "Bad Script", sans-serif;
-
-
-    ;
 }
 
 /* Body styles */
@@ -64,7 +31,6 @@ body {
     background: url(../media/astroMainCirc.png) no-repeat bottom right; /* Background image */
     background-color: #d2d9e8;
     /* background-position-x: 35vw; */
-
     background-size: 70vw auto; 
 }
 
@@ -74,16 +40,48 @@ main {
     /* background-color: black; */
     /* background-color: rgb(227, 235, 255); */
     min-height: 100vh;
-    margin: 0 auto; /* Centers the main element */
+    margin: 0 auto;
     display: grid;
     padding: 0 8vw;
     column-gap: 4%;
-    grid-template-columns: 48% 48%; /* Default two-column layout */
+    grid-template-columns: 48% 48%; /*two-column layout */
     grid-template-rows: 1fr;
-    grid-template-rows: auto; /* Rows will adjust based on content */
+    grid-template-rows: auto; 
 }
 
-/* Other styles remain unchanged */
+/* topnav styles */
+
+.topnav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #0f3683;
+    overflow: hidden;
+    border-bottom: #ddd solid 3px;
+}
+  
+  /* Style the links inside the navigation bar */
+.topnav a {
+    color: #ddd;
+    text-align: center;
+    padding: 2% 0;
+    width: 100%;
+    border-right: #ddd solid 3px;
+    text-decoration: none;
+    font-size: 1.25em;
+    background-color: #0f3683;
+    transition: 0.5s;
+}
+  
+  /* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+  
+.topnav a.active {
+    background-color: #ddd;
+    color: #ddd;
+}
 
 /* Header content */
 header {
@@ -99,89 +97,38 @@ header {
     justify-content: center;
     /* flex-wrap: nowrap; */
     background-color: #0f3683;
-    padding: 5%; /* Add some padding for breathing space */
-    margin-bottom: 5%; /* Add more margin for separation on mobile */
-    flex-wrap: nowrap; /* Allow items to wrap on smaller screens */
-
-    
+    padding: 5%; 
+    margin-bottom: 5%; 
+    flex-wrap: nowrap; 
 }
 
-.topnav {
-    display: flex;
-    justify-content: space-evenly;
-    background-color: #0f3683;
-    overflow: hidden;
-    border-bottom: #ddd solid 3px;
-  }
-  
-  /* Style the links inside the navigation bar */
-  .topnav a {
-    color: #ddd;
-    text-align: center;
-    padding: 14px 0;
-    width: 100%;
-    border-right: #ddd solid 3px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  /* Add a color to the active/current link */
-  .topnav a.active {
-    background-color: #ddd;
-    color: #ddd;
-  }
-
-/* 
-header h1 {
-    font-size: 4.5rem;
-    padding: 2%;
-    background-color: #ddd;
-    position: relative;
-    right: 5vw;
-    border-radius: 1.5em;
+header div {
+    min-width: 40vw;
+    align-content: center;
+    border-top: #ddd 3px solid;
+    border-bottom: #ddd 3px solid;
+    /* background: repeating-linear-gradient(#ffffff00 20px, #ddd 20px); */
+    flex-basis: auto;
 }
-
-header h2 {
-    /* font-size: 4.5rem; 
-    margin-top: 2%;
-    background-color: #ddd;
-    border-radius: 1.5em;
-    font-size: 1.6rem;
-    white-space: nowrap;
-    padding: 1% 5%;
-    display: inline-block;
-    max-width: 100% ;
-} 
-/* #headImg {
-    border: #ddd 3px solid;    
-    margin:2%;
-    flex-basis: 30%;
-} */
 
 
 header h1 {
-    font-size: 2.7rem; /* Adjust font size for mobile */
+    font-size: 3rem;
     padding: 3%;
     border-radius: 1.5em;
     background-color: #ddd;
     color: #2a2961;
     right: 0;
     position: relative;
-    max-width: 100%; /* Prevent overflow */
+    max-width: 100%; 
 }
 
 header h2 {
-    font-size: 1.2rem; /* Reduce font size for mobile */
+    font-size: 1.3rem; 
     background-color: #ddd;
     padding: 3%;
     border: 0;
-    white-space: normal; /* Allow text to wrap */
+    white-space: normal;
     display: block;
     border-radius: 2em;
     margin: 2% 0 0 2%;
@@ -189,20 +136,13 @@ header h2 {
 #headImg {
     max-width: 50%;
     max-height: 50%;
+    object-fit: cover;
     height: auto;
     display: block;
     border: #ddd 3px solid;
 
 }
 
-header div {
-    min-width: 40vw;
-    align-content: center;
-    
-    border-top: #ddd 3px solid;
-    border-bottom: #ddd 3px solid;
-    flex-basis: auto;
-}
 
 /* all the grid items */
 .mainSec {
@@ -335,7 +275,7 @@ footer p {
 
 
 /* switch to a different grid style when screen width is less than 900px */
-@media (max-width: 1000px) {
+@media (max-width: 1050px) {
     body {
         background-size: 100vw auto; 
     }
@@ -473,6 +413,28 @@ footer p {
 
     #babyBoy{
         margin-top: 4%;
+    }
+
+}
+
+@media (max-width: 449px) {
+    .last {
+        padding-bottom: 17.5vh;
+    }
+
+    .topnav {
+        justify-content: center;
+        flex-wrap: wrap;
+        border-bottom: none;
+    }
+      
+      /* Style the links inside the navigation bar */
+    .topnav a {
+        padding: 5% 0;
+        width: 100%;
+        flex-basis: 48%;
+        border: #ddd solid 3px;
+        font-size: 17px;
     }
 
 
