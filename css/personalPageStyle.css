@@ -233,12 +233,12 @@ header h2 {
 .perButton {
     border: #2a2961 solid 3px;
     align-self: right;
-    padding: 2.5%;
+    padding: 3% 5%;
     display: block;
     width: fit-content;
     text-align: right;
     margin: 2% 0;
-    font-size: 1rem;
+    font-size: 1.3rem;
     color: #2a2961;
     border-radius: 2em;
     background-color: #95ade1;
@@ -273,9 +273,45 @@ footer p {
     padding: 0 2% 1% 0;
 }
 
+#topBtn {
+    width: 2%;
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: solid 2px #000; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #95ade1; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 1%; /* Some padding */
+    border-radius: 10em; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    transition: .25s;
+  }
+  
+  #topBtn:hover {
+    background-color: #0f3683; /* Add a dark-grey background on hover */
+  }
+
+@media screen and (max-width: 1199px) {
+
+    #tessVid {
+        width: 50%; /* Adjust width as needed */
+        float: right; /* Floats the image to the right */
+        margin: 0; /* Adds space around the image, with a negative margin on the right */
+    }
+
+    #babyVid, #tessVid {
+        float: none;
+        margin: 2% 0;
+        width: 100%;
+    }
+}
 
 /* switch to a different grid style when screen width is less than 900px */
-@media (max-width: 1050px) {
+@media screen and (max-width: 1050px) {
     body {
         background-size: 100vw auto; 
     }
@@ -296,7 +332,6 @@ footer p {
     }
 
     header h1 {
-        font-size: 2.7rem; /* Adjust font size for mobile */
         padding: 3%;
         border-radius: 1.5em;
         border: none;
@@ -305,7 +340,7 @@ footer p {
     }
 
     header h2 {
-        font-size: 1.2rem; /* Reduce font size for mobile */
+        
         padding: 3%;
         border: 0;
         white-space: wrap;
@@ -333,27 +368,14 @@ footer p {
         margin: 0 auto;
     }
 
-    p {
-        font-size: 1rem; 
+    p, a {
+        font-size: 1.25rem; 
     }
 
     h2 {
-        font-size: 1.8rem; 
+        font-size: 3rem; 
     }
     
-    
-    #tessVid {
-        width: 50%; /* Adjust width as needed */
-        float: right; /* Floats the image to the right */
-        margin: 0; /* Adds space around the image, with a negative margin on the right */
-    }
-
-    #babyVid, #tessVid {
-        float: none;
-        margin: 2% 0;
-        width: 100%;
-    }
-
     .color {
         position: static;
         height: auto;
@@ -407,19 +429,44 @@ footer p {
         column-gap: 3%;
     }
 
-    .perButton{
-        font-size: 1rem;
-    }
-
     #babyBoy{
         margin-top: 4%;
     }
 
+    #topBtn {
+        width: 4%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .last {
+        padding-bottom: 40vh;
+    }
+    
+}
+
+@media (max-width: 539px) {
+    .vidAndHeader {
+        display: block;
+        text-align: center;
+        content: center;
+        align-items: center;
+    }
+
+    .perButton {
+
+        display: inline-block;
+        max-width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
 }
 
 @media (max-width: 449px) {
+    
+
     .last {
-        padding-bottom: 17.5vh;
+        padding-bottom: 20vh;
     }
 
     .topnav {
