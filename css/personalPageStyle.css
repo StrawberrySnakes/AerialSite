@@ -1,488 +1,502 @@
-/* Reset margins and padding */
-* {
-    margin: 0;
-    padding: 0;
-}
-
-/* font sze and style declaration */
-p, a {
-    font-size: 2.8vh;
-    font-family: "Handlee","Klee One", sans-serif;
-    font-family: "Klee One", sans-serif;
-    line-height: 1.6;
-}
-
-h2, h1 {
-    font-size: 5vh;
-    font-family: "Klee One", sans-serif;
-    color: #2a2961;
-    font-family: "Bad Script", sans-serif;
-}
-
-/* Body styles */
-/* Body styles */
-body {
-    padding-bottom: 0;
-    z-index: 999;
-    /* background-color: black; */
-    /* position: relative; */
-    overflow-x: hidden;
-    /* Background image */
-    background: url(../media/astroMainCirc.png) no-repeat bottom right; /* Background image */
-    background-color: #d2d9e8;
-    /* background-position-x: 35vw; */
-    background-size: 70vw auto; 
-}
-
-/* Main content area */
-main {
-    max-width: 1750px;
-    /* background-color: black; */
-    /* background-color: rgb(227, 235, 255); */
-    min-height: 100vh;
-    margin: 0 auto;
-    display: grid;
-    padding: 0 8vw;
-    column-gap: 4%;
-    grid-template-columns: 48% 48%; /*two-column layout */
-    grid-template-rows: 1fr;
-    grid-template-rows: auto; 
-}
-
-/* topnav styles */
-
-.topnav {
-    display: flex;
-    justify-content: space-evenly;
-    background-color: #0f3683;
-    overflow: hidden;
-    border-bottom: #ddd solid 3px;
-}
-  
-  /* Style the links inside the navigation bar */
-.topnav a {
-    color: #ddd;
-    text-align: center;
-    padding: 2% 0;
-    width: 100%;
-    border-right: #ddd solid 3px;
-    text-decoration: none;
-    font-size: 1.25em;
-    background-color: #0f3683;
-    transition: 0.5s;
-}
-  
-  /* Change the color of links on hover */
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
-}
-  
-.topnav a.active {
-    background-color: #ddd;
-    color: #ddd;
-}
-
-/* Header content */
-header {
-    /* height: auto; */
-    grid-row: 1/3;
-    /* height: 70vh; */
-    max-width: 100%;
-    max-height: 70vh;
-    text-align: center;
-    display: flex;
-    column-gap: 5%;
-    /* margin-bottom: 3%; */
-    justify-content: center;
-    /* flex-wrap: nowrap; */
-    background-color: #0f3683;
-    padding: 5%; 
-    margin-bottom: 5%; 
-    flex-wrap: nowrap; 
-}
-
-header div {
-    min-width: 40vw;
-    align-content: center;
-    border-top: #ddd 3px solid;
-    border-bottom: #ddd 3px solid;
-    /* background: repeating-linear-gradient(#ffffff00 20px, #ddd 20px); */
-    flex-basis: auto;
-}
-
-
-header h1 {
-    font-size: 3rem;
-    padding: 3%;
-    border-radius: 1.5em;
-    background-color: #ddd;
-    color: #2a2961;
-    right: 0;
-    position: relative;
-    max-width: 100%; 
-}
-
-header h2 {
-    font-size: 1.3rem; 
-    background-color: #ddd;
-    padding: 3%;
-    border: 0;
-    white-space: normal;
-    display: block;
-    border-radius: 2em;
-    margin: 2% 0 0 2%;
-}
-#headImg {
-    max-width: 50%;
-    max-height: 50%;
-    object-fit: cover;
-    height: auto;
-    display: block;
-    border: #ddd 3px solid;
-
-}
-
-
-/* all the grid items */
-.mainSec {
-    height: auto;   
-    flex-grow: 1;
-}
-
-/* subaru pictures */
-#tessVid {
-    /* width: 55%; */
-    float: right;
-    height: 100%;
-    border-radius: 3em;
-
-    margin-left: 20px; /* Adds space between the image and text */
-    margin-bottom: 10px; /* Adds space below the image */
-    /* border-radius: 5em; */
-}
-
-
-#babyVid {
-    max-width: 100%; /* Adjust width as needed */
-    height: auto;
-    display: block;
-    float: right; /* Floats the image to the right */
-    margin: 10px -60px 5px 10px; /* Adds space around the image, with a negative margin on the right */
-    border-radius: 3em;
-
-}
-
-/* the section with filled background */
-.color {
-    position: relative;
-    /* margin-bottom: 30px; */
-    margin-bottom: 5vh;
-    margin-top: 3vh;
-}
-
-.color p {
-    color: #ddd;
-    background-color: #0f3683;
-    padding: 10%;
-    z-index: -10;
-    
-}
-
-.color div h2 {
-    z-index: 20;
-    /* margin-left: 3rem; */
-    font-weight: 500;
-    font-size: 3rem;
-    color: #0f3683;
-    text-align: right; 
-}
-
-/* .color h3 {
-    color: #0f3683;
-    font-size: 1.6rem;
-    padding-bottom: 0;
-    #ddd-space: nowrap;
-    width: 100%;
-    margin-bottom: 0;
-    position: relative;
-    bottom: -1.5rem;
-    right: 2.7rem;
-    font-weight: 400;
-    display:inline-block;
-} */
-
-/* apply to all sect and last */
-.last {
-    margin-top: 10vh;
-}
-.last, .mainSec {
-    height: auto; /* Remove any fixed height */
-    align-self: start; /* Ensures it only takes as much space as its content */
-}
-
-.vidAndHeader {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-}
-
-.vidAndHeader h2 {
-    align-self: center;
-}
-.perButton {
-    border: #2a2961 solid 3px;
-    align-self: right;
-    padding: 3% 5%;
-    display: block;
-    width: fit-content;
-    text-align: right;
-    margin: 2% 0;
-    font-size: 1.3rem;
-    color: #2a2961;
-    border-radius: 2em;
-    background-color: #95ade1;
-    text-decoration: none;
-    opacity: 0.8;
-    transition: 0.5s;
-    align-self: center;
-}
-
-.perButton:active {
-    color: #fff;
-}
-
-.perButton:hover {
-    background-color: #0f3683;
-    color: #ddd;
-    opacity: 1;
-
-}
-
-.perbutton:visited{
-    background-color: #0f3683;
-    color: #ddd;
-}
-
-footer {
-    text-align: right;
-    color: #ddd;
-}
-
-footer p {
-    padding: 0 2% 1% 0;
-}
-
-#topBtn {
-    width: 2%;
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: solid 2px #000; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: #95ade1; /* Set a background color */
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 1%; /* Some padding */
-    border-radius: 10em; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
-    transition: .25s;
-  }
-  
-  #topBtn:hover {
-    background-color: #0f3683; /* Add a dark-grey background on hover */
-  }
-
-@media screen and (max-width: 1199px) {
-
-    #tessVid {
-        width: 50%; /* Adjust width as needed */
-        float: right; /* Floats the image to the right */
-        margin: 0; /* Adds space around the image, with a negative margin on the right */
-    }
-
-    #babyVid, #tessVid {
-        float: none;
-        margin: 2% 0;
-        width: 100%;
-    }
-}
-
-/* switch to a different grid style when screen width is less than 900px */
-@media screen and (max-width: 1050px) {
-    body {
-        background-size: 100vw auto; 
-    }
-
-    header {
-        display: block; /* Change layout to block for easier stacking */
-        height: auto; /* Allow height to adjust based on content */
-        max-height: none;
-        padding: 5%; /* Add some padding for breathing space */
-        margin-bottom: 5%; /* Add more margin for separation on mobile */
-    }
-    
-
-    header div {
-        border: none;
+    /* Reset margins and padding */
+    * {
         margin: 0;
         padding: 0;
     }
 
+    /* font sze and style declaration */
+    p, a {
+        font-size: 2.8vh;
+        font-family: "Handlee","Klee One", sans-serif;
+        font-family: "Klee One", sans-serif;
+        line-height: 1.6;
+    }
+
+    h2, h1 {
+        font-size: 5vh;
+        font-family: "Klee One", sans-serif;
+        color: #2a2961;
+        font-family: "Bad Script", sans-serif;
+    }
+
+    /* Body styles */
+    /* Body styles */
+    body {
+        padding-bottom: 0;
+        z-index: 999;
+        /* background-color: black; */
+        /* position: relative; */
+        overflow-x: hidden;
+        /* Background image */
+        background: url(../media/astroMainCirc.png) no-repeat bottom right; /* Background image */
+        background-color: #d2d9e8;
+        /* background-position-x: 35vw; */
+        background-size: 70vw auto; 
+    }
+
+    /* Main content area */
+    main {
+        /* max-width: 1750px; */
+        /* background-color: black; */
+        /* background-color: rgb(227, 235, 255); */
+        min-height: 100vh;
+        margin: 0 auto;
+        display: grid;
+        padding: 0 8vw;
+        column-gap: 4%;
+        grid-template-columns: 48% 48%; /*two-column layout */
+        grid-template-rows: 1fr;
+        grid-template-rows: auto; 
+    }
+
+    /* topnav styles */
+
+    .topnav {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: #0f3683;
+        overflow: hidden;
+        border-bottom: #ddd solid 3px;
+    }
+    
+    /* Style the links inside the navigation bar */
+    .topnav a {
+        color: #ddd;
+        text-align: center;
+        padding: 2% 0;
+        width: 100%;
+        border-right: #ddd solid 3px;
+        text-decoration: none;
+        font-size: 1.25em;
+        background-color: #0f3683;
+        transition: 0.5s;
+    }
+    
+    /* Change the color of links on hover */
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+    
+    .topnav a.active {
+        background-color: #ddd;
+        color: #b7b7b7;
+    }
+
+    /* Header content */
+    header {
+        /* height: auto; */
+        grid-row: 1/3;
+        /* height: 70vh; */
+        max-width: 100%;
+        max-height: 70vh;
+        text-align: center;
+        display: flex;
+        column-gap: 5%;
+        /* margin-bottom: 3%; */
+        justify-content: center;
+        /* flex-wrap: nowrap; */
+        background-color: #0f3683;
+        padding: 5%; 
+        margin-bottom: 5%; 
+        flex-wrap: nowrap; 
+    }
+
+    header div {
+        min-width: 40vw;
+        align-content: center;
+        border-top: #ddd 3px solid;
+        border-bottom: #ddd 3px solid;
+        /* background: repeating-linear-gradient(#ffffff00 20px, #ddd 20px); */
+        flex-basis: auto;
+    }
+
+
     header h1 {
+        font-size: 3rem;
         padding: 3%;
         border-radius: 1.5em;
-        border: none;
+        background-color: #ddd;
+        color: #2a2961;
         right: 0;
         position: relative;
+        max-width: 100%; 
     }
 
     header h2 {
-        
+        font-size: 1.3rem; 
+        background-color: #ddd;
         padding: 3%;
         border: 0;
-        white-space: wrap;
+        white-space: normal;
         display: block;
         border-radius: 2em;
         margin: 2% 0 0 2%;
     }
 
-    .mainSec{
-        border-bottom: solid #0f3683 4px;
-        padding-bottom: 4%;
-        margin-bottom: 4%;
-    }
-
     #headImg {
-        max-width: 100%; /* Make the image take most of the screen width */
+        max-width: 100%;
         max-height: 100%;
-        margin: 0 auto 5%; /* Center the image with margin */
-        display: block;
-    }
-
-    main {
-        display: block;
-        /* width: 90%; */
-        margin: 0 auto;
-    }
-
-    p, a {
-        font-size: 1.25rem; 
-    }
-
-    h2 {
-        font-size: 3rem; 
-    }
-    
-    .color {
-        position: static;
+        object-fit: cover;
         height: auto;
-        /* bottom: 125px; */
-        /* margin-bottom: 30px; */
-        margin: 0 auto;
-        /* margin-top: 5%; */
-        top: 0;
-        bottom: 0;
+        display: block;
+        border: #ddd 3px solid;
+
     }
 
-    .color div h2 {
+    picture {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    /* all the grid items */
+    .mainSec {
+        height: auto;   
+        flex-grow: 1;
+    }
+
+    /* subaru pictures */
+    #tessVid {
+        width: 55%;
+        float: right;
+        height: 100%;
+        border-radius: 4em;
+        margin-left: 20px; /* Adds space between the image and text */
+        margin-bottom: 10px; /* Adds space below the image */
+        /* border-radius: 5em; */
+    }
+
+
+    #babyVid {
+        width: 55%;
+        max-width: 100%; /* Adjust width as needed */
+        height: auto;
+        display: block;
+        float: right; /* Floats the image to the right */
+        margin: 10px -60px 5px 10px; /* Adds space around the image, with a negative margin on the right */
+        border-radius: 2.5em;
+
+    }
+
+    /* the section with filled background */
+    .color {
         position: relative;
-        top: -200px;
-        z-index: 20;
-        font-size: 2rem;
-        color: #ddd;
-        /* text-align: center;  */
-        position: static;
-
-    }
-    
-    .color h3 {
-        color: #887862;
-        /* position: static; */
-        top: 17px;
-        right: 0;
-        font-size: 1.5rem;
-        white-space: wrap;
-        width: 100%;
-        margin-bottom: 0;
-        font-weight: 400;
-        display:block;
-        text-align: center;
-        margin: 0 auto;
+        /* margin-bottom: 30px; */
+        margin-bottom: 5vh;
+        margin-top: 3vh;
     }
 
     .color p {
-        /* position: static; */
-        bottom: 2em;
+        color: #ddd;
+        background-color: #0f3683;
+        padding: 10%;
+        z-index: -10;
         
     }
 
+    .color div h2 {
+        z-index: 20;
+        /* margin-left: 3rem; */
+        font-weight: 500;
+        font-size: 3rem;
+        color: #0f3683;
+        text-align: right; 
+    }
+
+    /* .color h3 {
+        color: #0f3683;
+        font-size: 1.6rem;
+        padding-bottom: 0;
+        #ddd-space: nowrap;
+        width: 100%;
+        margin-bottom: 0;
+        position: relative;
+        bottom: -1.5rem;
+        right: 2.7rem;
+        font-weight: 400;
+        display:inline-block;
+    } */
+
+    /* apply to all sect and last */
     .last {
-        margin-top: 4%;
-        padding-bottom: 50vh;
-        border-bottom: none;
+        margin-top: 10vh;
+    }
+    .last, .mainSec {
+        height: auto; /* Remove any fixed height */
+        align-self: start; /* Ensures it only takes as much space as its content */
     }
 
     .vidAndHeader {
-        column-gap: 3%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
     }
 
-    #babyBoy{
-        margin-top: 4%;
+    .vidAndHeader h2 {
+        align-self: center;
+    }
+    .perButton {
+        border: #2a2961 solid 3px;
+        padding: 3% 5%;
+        display: block;
+        width: fit-content;
+        text-align: right;
+        margin: 2% 0;
+        /* font-size: 1.3rem; */
+        color: #2a2961;
+        border-radius: 2em;
+        background-color: #95ade1;
+        text-decoration: none;
+        opacity: 0.8;
+        transition: 0.5s;
+        align-self: center;
+    }
+
+    .perButton:active {
+        color: #fff;
+    }
+
+    .perButton:hover {
+        background-color: #0f3683;
+        color: #ddd;
+        opacity: 1;
+
+    }
+
+    .perbutton:visited{
+        background-color: #0f3683;
+        color: #ddd;
+    }
+
+    footer {
+        text-align: right;
+        color: #ddd;
+    }
+
+    footer p {
+        padding: 0 2% 1% 0;
     }
 
     #topBtn {
-        width: 4%;
-    }
-}
-
-@media screen and (max-width: 750px) {
-    .last {
-        padding-bottom: 40vh;
+        width: 2%;
+        display: none;
+        position: fixed;
+        bottom: 20px; 
+        right: 30px; 
+        z-index: 99; 
+        border: solid 2px #000; 
+        outline: none; 
+        background-color: #95ade1; 
+        cursor: pointer; 
+        padding: 1%; 
+        border-radius: 10em; 
+        transition: .25s;
     }
     
-}
-
-@media (max-width: 539px) {
-    .vidAndHeader {
-        display: block;
-        text-align: center;
-        content: center;
-        align-items: center;
+    #topBtn:hover {
+        background-color: #0f3683; /* Add a dark-grey background on hover */
     }
 
-    .perButton {
+    @media screen and (max-width: 1199px) {
 
-        display: inline-block;
-        max-width: 100%;
-        margin: 0 auto;
-        text-align: center;
-    }
-}
+        #tessVid {
+            width: 50%; /* Adjust width as needed */
+            float: right; /* Floats the image to the right */
+            margin: 0; /* Adds space around the image, with a negative margin on the right */
+        }
 
-@media (max-width: 449px) {
-    
-
-    .last {
-        padding-bottom: 20vh;
-    }
-
-    .topnav {
-        justify-content: center;
-        flex-wrap: wrap;
-        border-bottom: none;
-    }
-      
-      /* Style the links inside the navigation bar */
-    .topnav a {
-        padding: 5% 0;
-        width: 100%;
-        flex-basis: 48%;
-        border: #ddd solid 3px;
-        font-size: 17px;
+        #babyVid, #tessVid {
+            float: none;
+            margin: 2% 0;
+            width: 100%;
+        }
     }
 
+    /* switch to a different grid style when screen width is less than 900px */
+    @media screen and (max-width: 1050px) {
+        body {
+            background-size: 100vw auto; 
+        }
 
-}
+        header {
+            display: block; /* Change layout to block for easier stacking */
+            height: auto; /* Allow height to adjust based on content */
+            max-height: none;
+            padding: 5%; /* Add some padding for breathing space */
+            margin-bottom: 5%; /* Add more margin for separation on mobile */
+        }
+        
+
+        header div {
+            border: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        header h1 {
+            padding: 3%;
+            border-radius: 1.5em;
+            border: none;
+            right: 0;
+            position: relative;
+        }
+
+        header h2 {
+            
+            padding: 3%;
+            border: 0;
+            white-space: wrap;
+            display: block;
+            border-radius: 2em;
+            margin: 2% 0 0 2%;
+        }
+
+        .mainSec{
+            border-bottom: solid #0f3683 4px;
+            padding-bottom: 4%;
+            margin-bottom: 4%;
+        }
+
+        #headImg {
+            max-width: 100%; /* Make the image take most of the screen width */
+            max-height: 100%;
+            margin: 0 auto 5%; /* Center the image with margin */
+            display: block;
+        }
+
+        main {
+            display: block;
+            /* width: 90%; */
+            margin: 0 auto;
+        }
+
+        p, a {
+            font-size: 1.25rem; 
+        }
+
+        h2 {
+            font-size: 3rem; 
+        }
+        
+        .color {
+            position: static;
+            height: auto;
+            /* bottom: 125px; */
+            /* margin-bottom: 30px; */
+            margin: 0 auto;
+            /* margin-top: 5%; */
+            top: 0;
+            bottom: 0;
+        }
+
+        .color div h2 {
+            position: relative;
+            top: -200px;
+            z-index: 20;
+            font-size: 2rem;
+            color: #ddd;
+            /* text-align: center;  */
+            position: static;
+
+        }
+        
+        .color h3 {
+            color: #887862;
+            /* position: static; */
+            top: 17px;
+            right: 0;
+            font-size: 1.5rem;
+            white-space: wrap;
+            width: 100%;
+            margin-bottom: 0;
+            font-weight: 400;
+            display:block;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .color p {
+            /* position: static; */
+            bottom: 2em;
+            
+        }
+
+        .last {
+            margin-top: 4%;
+            padding-bottom: 50vh;
+            border-bottom: none;
+        }
+
+        .vidAndHeader {
+            column-gap: 3%;
+        }
+
+        #babyBoy{
+            margin-top: 4%;
+        }
+
+        #topBtn {
+            width: 4%;
+        }
+    }
+
+    @media screen and (max-width: 750px) {
+        .last {
+            padding-bottom: 40vh;
+        }
+        
+    }
+
+    @media (max-width: 539px) {
+
+        .vidAndHeader {
+            display: block;
+            text-align: center;
+            align-items: center;
+        }
+
+        .perButton {
+
+            display: inline-block;
+            max-width: 100%;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+
+    @media (max-width: 449px) {
+
+        h2 {
+            text-align: center;
+        }
+
+        .last {
+            padding-bottom: 20vh;
+        }
+
+        .topnav {
+            justify-content: center;
+            flex-wrap: wrap;
+            column-gap: 1%;
+            border-bottom: none;
+            padding: 1%;
+        }
+        
+        /* Style the links inside the navigation bar */
+        .topnav a {
+            padding: 5% 0;
+            width: 100%;
+            flex-basis: 48%;
+            margin-bottom: 1%;
+            border: #ddd solid 3px;
+            font-size: 17px;
+        }
+
+        #topBtn {
+            padding: 3%;
+            width: 6%;
+            right: 15px;
+        }
+
+    }

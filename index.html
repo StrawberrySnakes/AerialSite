@@ -31,8 +31,12 @@
     </nav>
 
     <header>
-       
-        <img id="headImg" src="media/astroSecond.jpg" alt="Dessa Doing Aerial">
+        <picture >
+            <source media="(max-width: 700px)" srcset="media/astroSecondSmall.jpg">
+            <source media="(max-width: 400px)" srcset="media/astroSecondExtraSmalljpg.jpg">
+            <img id="headImg" src="media/astroSecond.jpg" alt="Dessa Doing Aerial">
+        </picture>
+
         <div id="topTitle">
             <h1>Aerial Dance</h1>
             <h2>Performances and Chorography by Dessa Shapiro</h2>
@@ -109,7 +113,7 @@
     </main>
 
     <footer>
-        <img id="topBtn" title="to top" onclick="topFunction()" src="media/top.png" alt="top button"/>
+        <img id="topBtn" title="to top" onclick="topFunction()" src="media/top.png" alt="top button">
         <p>&copy; Dessa Shapiro Fall 2024</p>
     </footer>
 
