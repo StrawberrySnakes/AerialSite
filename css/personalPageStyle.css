@@ -72,15 +72,23 @@
         transition: 0.5s;
     }
     
+    .topnav a:link {
+        color: #ddd;
+    }
+
+    .topnav a:visited {
+        color: #ddd;
+    }
+
     /* Change the color of links on hover */
     .topnav a:hover {
         background-color: #ddd;
-        color: black;
+        color: #000;
     }
     
     .topnav a.active {
         background-color: #ddd;
-        color: #b7b7b7;
+        color: #2a2961;
     }
 
     /* Header content */
@@ -253,8 +261,12 @@
         align-self: center;
     }
 
-    .perButton:active {
-        color: #fff;
+    .perButton:link{
+        color: #2a2961;
+    }
+
+    .perbutton:visited{
+        color: #ddd;
     }
 
     .perButton:hover {
@@ -264,9 +276,8 @@
 
     }
 
-    .perbutton:visited{
-        background-color: #0f3683;
-        color: #ddd;
+    .perButton:active {
+        color: #95ade1;
     }
 
     footer {
